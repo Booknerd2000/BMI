@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
 	Scanner keyboard;
-	int weight, feet, inches;
+	double weight, feet, inches;
 
 	keyboard = new Scanner(System.in);
 
@@ -17,7 +17,9 @@ public class Main {
 
 	System.out.println("What is your height(only inches)?");
 	inches = keyboard.nextInt();
+	    inches = (feet*12+inches);
 
+	System.out.println((weight*703)/(inches*inches));
 	
     }
 }
